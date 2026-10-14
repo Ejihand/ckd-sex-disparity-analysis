@@ -1,7 +1,8 @@
 cff-version: 1.2.0
 title: >-
-  Analysis code for sex disparity in machine-learning chronic kidney
-  disease staging
+  Analysis code for sex disparity and the sex adjustment in
+  creatinine-based chronic kidney disease staging, with conditional
+  mutual information estimator diagnostics
 message: If you use this software, please cite it using these metadata.
 type: software
 authors:

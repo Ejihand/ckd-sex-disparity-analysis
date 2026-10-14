@@ -1,0 +1,29 @@
+{
+  "title": "Analysis code for sex disparity and the sex adjustment in creatinine-based chronic kidney disease staging, with conditional mutual information estimator diagnostics",
+  "description": "<p>Analysis code accompanying three manuscripts on biological sex in creatinine-based chronic kidney disease staging.</p><p>Reproduces every reported figure: the unmitigated and mitigated model results of the first study, including calibration of the advanced-stage risk and stability across eighty independent partitions; the equation-level counterfactual, conditional randomisation test and partial information decomposition of the second; and the negative-control estimator diagnostic of the third, with its sample-size and neighbourhood-size sweep, specificity evaluation and non-monotone dependence check.</p><p>Patient data are not included. The two preparation scripts rebuild the analytic files from the source workbooks.</p>",
+  "upload_type": "software",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Iheanetu, O. U.",
+      "orcid": "0000-0001-8711-8017",
+      "affiliation": "Department of Computer and Information Sciences, Covenant University, Ota, Ogun State, Nigeria"
+    },
+    {
+      "name": "Ejiaka, Nwaeze",
+      "orcid": "0009-0003-4516-3102",
+      "affiliation": "Department of Computer and Information Sciences, Covenant University, Ota, Ogun State, Nigeria"
+    }
+  ],
+  "keywords": [
+    "chronic kidney disease",
+    "estimated glomerular filtration rate",
+    "algorithmic fairness",
+    "sex differences",
+    "serum creatinine",
+    "conditional mutual information",
+    "estimator validation",
+    "clinical prediction models"
+  ],
+  "access_right": "open"
+}
