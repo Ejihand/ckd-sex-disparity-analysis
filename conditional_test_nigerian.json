@@ -1,0 +1,32 @@
+{
+ "label": "nigerian",
+ "n": 2463,
+ "n_female": 1255,
+ "propensity_auc_gb": 0.5993331310519511,
+ "propensity_auc_lr": 0.5383551885174533,
+ "n_perm": 500,
+ "global permutation (original)": {
+  "observed": 0.018216595686610933,
+  "null_mean": 0.00021408946462861056,
+  "null_q95": 0.0008049708804964777,
+  "p": 0.001996007984031936
+ },
+ "CRT, gradient-boosting propensity": {
+  "observed": 0.018216595686610933,
+  "null_mean": 0.0001891430164114968,
+  "null_q95": 0.0007622957848106853,
+  "p": 0.001996007984031936
+ },
+ "CRT, logistic propensity": {
+  "observed": 0.018216595686610933,
+  "null_mean": 0.0001947476181807666,
+  "null_q95": 0.0007405067596693718,
+  "p": 0.001996007984031936
+ },
+ "stratified permutation (20 strata)": {
+  "observed": 0.018216595686610933,
+  "null_mean": 0.00017364912519027062,
+  "null_q95": 0.0007059051232457907,
+  "p": 0.001996007984031936
+ }
+}

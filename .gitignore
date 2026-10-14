@@ -1,0 +1,9 @@
+# analytic files are rebuilt from source workbooks, not committed
+cohort_clean.csv
+nhanes_clean.csv
+*.xlsx
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/

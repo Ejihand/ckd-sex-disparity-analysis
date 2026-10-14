@@ -1,0 +1,104 @@
+{
+  "equation": "ckdepi",
+  "n": 5071,
+  "n_female": 2637,
+  "n_male": 2434,
+  "seed": 42,
+  "k": 5,
+  "n_boot": 500,
+  "n_perm": 500,
+  "units": "nats",
+  "experiment_1_ceiling": {
+    "sex_blind": {
+      "cv_accuracy_mean": 0.8730023998989518,
+      "cv_accuracy_sd": 0.004831033670019225,
+      "cv_macro_f1_mean": 0.670419060073338,
+      "cv_macro_f1_sd": 0.09853621667028421,
+      "folds": [
+        0.8778325123152709,
+        0.8777120315581854,
+        0.8747534516765286,
+        0.8658777120315582,
+        0.868836291913215
+      ]
+    },
+    "sex_aware": {
+      "cv_accuracy_mean": 0.983236851565764,
+      "cv_accuracy_sd": 0.004278991291048841,
+      "cv_macro_f1_mean": 0.7808624565668154,
+      "cv_macro_f1_sd": 0.12292974798105584,
+      "folds": [
+        0.9891625615763546,
+        0.985207100591716,
+        0.9812623274161736,
+        0.9842209072978304,
+        0.9763313609467456
+      ]
+    },
+    "ceiling_gap_accuracy": 0.11023445166681223
+  },
+  "experiment_2_biological": {
+    "primary_estimator": "gaussian_copula",
+    "cmi_creatinine_sex_given_panel_nats": 0.1534570935559243,
+    "bootstrap_mean": 0.1533470253299466,
+    "ci95_low": 0.1411103839408194,
+    "ci95_high": 0.16784220733078276,
+    "permutation_p": 0.001996007984031936,
+    "permutation_null_mean": 0.00011077791995822748,
+    "marginal_mi_creatinine_sex_nats": 0.16907757298139497,
+    "redundancy_fraction": 0.09238646586906907,
+    "dimension_sensitivity": {
+      "1": {
+        "gaussian_copula": 0.17994473594805602,
+        "ksg": 0.22936639881841336
+      },
+      "2": {
+        "gaussian_copula": 0.15941358318580257,
+        "ksg": 0.03714622982466276
+      },
+      "3": {
+        "gaussian_copula": 0.1591522865950901,
+        "ksg": 0.008619899021200528
+      },
+      "4": {
+        "gaussian_copula": 0.15300468825700123,
+        "ksg": 0.008684851925830017
+      },
+      "5": {
+        "gaussian_copula": 0.1534570935559243,
+        "ksg": 0.006122113605844692
+      }
+    },
+    "ksg_secondary_2cond": 0.036829121231778617,
+    "ksg_k_sensitivity_2cond": {
+      "3": 0.08452440199192257,
+      "5": 0.036864656564174814,
+      "10": 0.010305655473440645,
+      "20": 0.006618984297263264
+    }
+  },
+  "experiment_3_pid": {
+    "I_total": 0.3581338652874968,
+    "I_x1": 0.25464104953573496,
+    "I_x2": 0.12933374133788228,
+    "unique_x1": 0.21602797961797293,
+    "unique_x2": 0.09227467375881429,
+    "redundant": 0.03783606874841501,
+    "synergistic": 0.011995143162294608,
+    "sum_check": 0.3581338652874968,
+    "pct_unique_sex": 60.32045571690171,
+    "pct_unique_panel": 25.76541419358361,
+    "pct_redundant": 10.564783846409386,
+    "pct_synergistic": 3.3493462431053107,
+    "sex_information_that_is_unique_pct": 84.8362744387985,
+    "bins": 4,
+    "units": "bits"
+  },
+  "experiment_4_equation": {
+    "cmi_stage_sex_given_panel_nats": 1.6792302167204677e-05,
+    "cmi_stage_unity_multiplier_nats": 0.040472064659132195,
+    "equation_manufactured_component_nats": -0.04045527235696499,
+    "records_reclassified_by_sex_factor": 674,
+    "pct_reclassified": 13.29126405048314
+  }
+}

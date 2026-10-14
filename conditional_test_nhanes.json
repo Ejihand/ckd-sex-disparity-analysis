@@ -1,0 +1,32 @@
+{
+ "label": "nhanes",
+ "n": 5071,
+ "n_female": 2637,
+ "propensity_auc_gb": 0.6890000682406896,
+ "propensity_auc_lr": 0.6676090269656669,
+ "n_perm": 500,
+ "global permutation (original)": {
+  "observed": 0.1534570935559243,
+  "null_mean": 9.525207001684561e-05,
+  "null_q95": 0.00037669841475444896,
+  "p": 0.001996007984031936
+ },
+ "CRT, gradient-boosting propensity": {
+  "observed": 0.1534570935559243,
+  "null_mean": 9.949420884685753e-05,
+  "null_q95": 0.0003597950477664813,
+  "p": 0.001996007984031936
+ },
+ "CRT, logistic propensity": {
+  "observed": 0.1534570935559243,
+  "null_mean": 0.00011433618465389071,
+  "null_q95": 0.0004374817260664199,
+  "p": 0.001996007984031936
+ },
+ "stratified permutation (20 strata)": {
+  "observed": 0.1534570935559243,
+  "null_mean": 0.00010840169706438121,
+  "null_q95": 0.00043156353570164563,
+  "p": 0.001996007984031936
+ }
+}

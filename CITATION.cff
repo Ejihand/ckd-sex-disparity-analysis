@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: >-
+  Analysis code for sex disparity in machine-learning chronic kidney
+  disease staging
+message: If you use this software, please cite it using these metadata.
+type: software
+authors:
+  - family-names: Iheanetu
+    given-names: O. U.
+    orcid: https://orcid.org/0000-0001-8711-8017
+    affiliation: >-
+      Department of Computer and Information Sciences, Covenant
+      University, Ota, Ogun State, Nigeria
+  - family-names: Ejiaka
+    given-names: Nwaeze
+    orcid: https://orcid.org/0009-0003-4516-3102
+    affiliation: >-
+      Department of Computer and Information Sciences, Covenant
+      University, Ota, Ogun State, Nigeria
+license: MIT

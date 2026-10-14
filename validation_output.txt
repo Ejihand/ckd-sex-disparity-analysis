@@ -1,0 +1,38 @@
+================================================================================================
+ESTIMATOR VALIDATION  (n=2463, k=5, seed=42)   units = nats
+================================================================================================
+
+V1. Gaussian MI, I(X;Y) = -0.5 ln(1 - rho^2)
+   rho=0.0                                     truth=-0.0000  est= 0.0017  err=+0.0017     n/a
+   rho=0.3                                     truth= 0.0472  est= 0.0131  err=-0.0340   -72.1%
+   rho=0.6                                     truth= 0.2231  est= 0.2225  err=-0.0007    -0.3%
+   rho=0.9                                     truth= 0.8304  est= 0.8314  err=+0.0011    +0.1%
+
+V2. Gaussian CMI, I(X;Y|Z) = -0.5 ln(1 - partial_rho^2)
+   partial_rho=0.221                           truth= 0.0251  est= 0.0386  err=+0.0135   +53.8%
+   partial_rho=0.501                           truth= 0.1442  est= 0.1526  err=+0.0084    +5.8%
+   partial_rho=0.804                           truth= 0.5190  est= 0.5356  err=+0.0166    +3.2%
+
+V3. Conditional independence, I(X;Y|Z) = 0  (X and Y share only Z)
+   trial 1                                     truth= 0.0000  est= 0.0213  err=+0.0213     n/a
+   trial 2                                     truth= 0.0000  est= 0.0000  err=+0.0000     n/a
+   trial 3                                     truth= 0.0000  est= 0.0000  err=+0.0000     n/a
+
+V3b. Conditional independence with a BINARY X (mirrors sex)
+   trial 1                                     truth= 0.0000  est= 0.0000  err=+0.0000     n/a
+   trial 2                                     truth= 0.0000  est= 0.0000  err=+0.0000     n/a
+   trial 3                                     truth= 0.0000  est= 0.0000  err=+0.0000     n/a
+
+V4. Discrete-continuous MI, two-component Gaussian mixture (Ross estimator)
+   separation=0.5                              truth= 0.0303  est= 0.0279  err=-0.0024    -8.0%
+   separation=1.0                              truth= 0.1114  est= 0.1107  err=-0.0007    -0.6%
+   separation=2.0                              truth= 0.3368  est= 0.3371  err=+0.0003    +0.1%
+
+================================================================================================
+Non-null checks: 9   median |relative error| = 3.2%
+Null checks (true value 0): 7   max estimate = 0.0213 nats
+================================================================================================
+
+Interpretation: the estimator must (a) track known values with modest bias and
+(b) return ~0 under conditional independence. Failure of (b) would invalidate any
+claim that sex carries unique information, so it is the decisive check.
